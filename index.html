@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="style.css"></link>
+        <title>Tetris</title>
+    </head>
+    <body>
+        <div class='center'>
+            <h3>Score: <span id="score">0</span></h3>
+            <button id="start-button">Start/Pause</button>
+            <div class="gap"></div>
+            <div class="container">
+                <div class="grid" id="grid"></div>
+
+                <script>
+                    for (i=1; i<=200; i++) {
+                        g = "<div></div>";
+                        document.getElementById("grid").innerHTML += g;
+                    }
+                    for (i=1; i<=10; i++) {
+                        g = "<div class=\"taken\"></div>";
+                        document.getElementById("grid").innerHTML += g;
+                    }
+                </script>
+
+                <div class='spacer'></div>
+
+                <div class='mini-grid' id='mini-grid'></div>
+
+                <script>
+                    for (i=1; i<=16; i++) {
+                        g = "<div></div>";
+                        document.getElementById("mini-grid").innerHTML += g;
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

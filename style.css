@@ -1,0 +1,49 @@
+.center {
+    width: 320px;
+    margin-top: 100px;
+    margin-left: 40%;
+}
+
+.gap {
+    height: 30px;
+}
+
+.container {
+    width: 320px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    width: 200px;
+    height : 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(139, 204, 209);
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.tetromino {
+    box-shadow: -1px -1px 1px rgb(39, 38, 38);
+}
+
+.spacer {
+    width: 40px;
+}
+
+.mini-grid {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mini-grid div{
+    width: 20px;
+    height: 20px;
+}

@@ -81,6 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
+    nextRandom = Math.floor(Math.random()*theTetrominoes.length);
+    
     function startPause() {
         if (timerId) {
             clearInterval(timerId);
@@ -90,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
         else {
             draw();
             timerId = setInterval(moveDown, 1000);
-            nextRandom = Math.floor(Math.random()*theTetrominoes.length);
             displayNextUp();
             document.addEventListener('keyup', control);
             startButton.blur();
